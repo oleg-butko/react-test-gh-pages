@@ -13,19 +13,19 @@ class App extends React.Component {
                     <nav>
                         <ul id="navigation">
                             <li>
-                                <Link to="/">Home</Link>
+                                <Link to="/react-test-gh-pages">Home</Link>
                             </li>
                             <li>
-                                <Link to="/about">About</Link>
+                                <Link to="/react-test-gh-pages/about">About</Link>
                             </li>
                             <li>
-                                <Link to="/contact">Contact</Link>
+                                <Link to="/react-test-gh-pages/contact">Contact</Link>
                             </li>
                         </ul>
                     </nav>
                     <Routes>
-                        <Route exact path="/" element={<Home />} />
-                        <Route path="/about" element={<About />} />
+                        <Route exact path="/react-test-gh-pages" element={<Home />} />
+                        <Route path="/react-test-gh-pages/about" element={<About />} />
                     </Routes>
                 </div>
             </Router>
