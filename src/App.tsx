@@ -5,7 +5,7 @@ import About from './About'
 import Home from './Home'
 import { useEffect } from 'react'
 
-const Error404 = props => {
+const Error404 = (props: { title: string }) => {
     useEffect(() => {
         document.title = props.title || ''
     }, [props.title])
@@ -37,7 +37,7 @@ class App extends React.Component {
                         <Link to="/contact">Contact</Link>
                     </nav>
                     <Routes>
-                        <Route exact path="/" element={<Home title="CRA - Home" />} />
+                        <Route path="/" element={<Home title="CRA - Home" />} />
                         <Route path="/about" element={<About title="CRA - About" />} />
                         <Route path="*" element={<Error404 title="CRA - Error 404" />} />
                     </Routes>

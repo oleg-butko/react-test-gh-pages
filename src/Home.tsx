@@ -3,6 +3,8 @@ import React from 'react'
 import logo from './logo.svg'
 
 class Home extends React.Component {
+    props: any
+
     componentDidMount() {
         document.title = this.props.title
     }

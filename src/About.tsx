@@ -4,7 +4,15 @@ const divStyle = {
     color: 'white'
 }
 
+// interface IAboutProps {
+//     title?: string
+// }
+
+// interface AppState {}
+
 class About extends React.Component {
+    props: any
+
     componentDidMount() {
         document.title = this.props.title
     }
