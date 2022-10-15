@@ -6,7 +6,7 @@ import Home from './Home'
 
 const Error404 = () => {
     return (
-        <div className="App">
+        <div style={{ color: 'red' }}>
             <h2>Page not found</h2>
         </div>
     )
