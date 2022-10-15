@@ -1,5 +1,6 @@
 import './App.css'
 import React from 'react'
+// import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
 import About from './About'
@@ -13,19 +14,19 @@ class App extends React.Component {
                     <nav>
                         <ul id="navigation">
                             <li>
-                                <Link to="react-test-gh-pages">Home</Link>
+                                <Link to="/">Home</Link>
                             </li>
                             <li>
-                                <Link to="react-test-gh-pages/about">About</Link>
+                                <Link to="/about">About</Link>
                             </li>
                             <li>
-                                <Link to="react-test-gh-pages/contact">Contact</Link>
+                                <Link to="/contact">Contact</Link>
                             </li>
                         </ul>
                     </nav>
                     <Routes>
-                        <Route exact path="react-test-gh-pages" element={<Home />} />
-                        <Route path="react-test-gh-pages/about" element={<About />} />
+                        <Route exact path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
                     </Routes>
                 </div>
             </Router>
