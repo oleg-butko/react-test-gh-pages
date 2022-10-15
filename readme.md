@@ -14,18 +14,17 @@ Source: https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/
 4. set homepage and scripts section
 5. npm run deploy
 
-### Steps to add routing:
+### Adding routing (https://github.com/rafgraph/spa-github-pages):
 1. `npm i react-router-dom --save` (6.4.2)
 2. `import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'`
 
-#### using HashRouter:
+#### HashRouter:
 1. `import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom'`
-2. https://oleg-butko.github.io/react-test-gh-pages/#/react-test-gh-pages
-3. https://oleg-butko.github.io/react-test-gh-pages/#/react-test-gh-pages/about
+2. https://oleg-butko.github.io/react-test-gh-pages/#/
+3. https://oleg-butko.github.io/react-test-gh-pages/#/about
 
 
-#### using custom 404.html page (source: https://github.com/rafgraph/spa-github-pages)
-
+#### Custom 404.html page 
 1. 
 
 
