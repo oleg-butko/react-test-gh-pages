@@ -4,6 +4,14 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import About from './About'
 import Home from './Home'
 
+const Error404 = () => {
+    return (
+        <div className="App">
+            <h2>Page not found</h2>
+        </div>
+    )
+}
+
 const isGithub = window.location.host.endsWith('github.io')
 
 class App extends React.Component {
@@ -27,6 +35,7 @@ class App extends React.Component {
                     <Routes>
                         <Route exact path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
+                        <Route path="*" element={<Error404 />} />
                     </Routes>
                 </div>
             </Router>
