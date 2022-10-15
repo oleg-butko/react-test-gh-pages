@@ -19,18 +19,18 @@ class App extends React.Component {
         return (
             <Router basename={isGithub ? '/react-test-gh-pages' : ''}>
                 <div className="App">
-                    <nav>
-                        <ul id="navigation">
-                            <li>
-                                <Link to="/">Home</Link>
-                            </li>
-                            <li>
-                                <Link to="/about">About</Link>
-                            </li>
-                            <li>
-                                <Link to="/contact">Contact</Link>
-                            </li>
-                        </ul>
+                    <nav
+                        style={{
+                            borderBottom: 'solid 1px',
+                            paddingTop: '.2rem',
+                            paddingBottom: '.5rem'
+                        }}
+                    >
+                        <Link to="/">Home</Link>
+                        <Link style={{ margin: '1rem' }} to="/about">
+                            About
+                        </Link>
+                        <Link to="/contact">Contact</Link>
                     </nav>
                     <Routes>
                         <Route exact path="/" element={<Home />} />
