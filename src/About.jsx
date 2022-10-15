@@ -1,12 +1,14 @@
-
-import React from 'react';
+import React from 'react'
 
 const divStyle = {
-    color:'white'
-};
+    color: 'white'
+}
 
 class About extends React.Component {
-    
+    componentDidMount() {
+        document.title = this.props.title
+    }
+
     render() {
         return (
             <div style={divStyle}>
@@ -19,6 +21,4 @@ class About extends React.Component {
     }
 }
 
-
-
-export default About;
+export default About

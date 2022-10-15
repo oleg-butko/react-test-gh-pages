@@ -3,8 +3,12 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import About from './About'
 import Home from './Home'
+import { useEffect } from 'react'
 
-const Error404 = () => {
+const Error404 = props => {
+    useEffect(() => {
+        document.title = props.title || ''
+    }, [props.title])
     return (
         <div style={{ color: 'red' }}>
             <h2>Page not found</h2>
@@ -33,9 +37,9 @@ class App extends React.Component {
                         <Link to="/contact">Contact</Link>
                     </nav>
                     <Routes>
-                        <Route exact path="/" element={<Home />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="*" element={<Error404 />} />
+                        <Route exact path="/" element={<Home title="CRA - Home" />} />
+                        <Route path="/about" element={<About title="CRA - About" />} />
+                        <Route path="*" element={<Error404 title="CRA - Error 404" />} />
                     </Routes>
                 </div>
             </Router>
